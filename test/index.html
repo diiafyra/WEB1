@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trang web giới thiệu bản thân của mị" />
+    <title>Giới thiệu bản thân</title>
+    <style>
+      body {
+        display: flex; /* Sử dụng flexbox */
+        flex-direction: column; /* Đặt chiều dọc */
+        min-height: 100vh; /* Chiều cao tối thiểu bằng 100% chiều cao cửa sổ */
+        font-family: Arial, sans-serif;
+        background-color: #e79eb7;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #92d894;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        flex: 1; /* Chiếm toàn bộ không gian còn lại */
+        padding: 20px;
+        background-color: rgb(150, 11, 11);
+        max-width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      p,
+      li,
+      h2 {
+        color: #ffffff;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #92d894;
+        color: white;
+      }
+      div {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Let's me introduce myseft</h1>
+    </header>
+
+    <main>
+      <section style="text-align: center">
+        <h2>Ảnh cá nhân</h2>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1675237625695-710b9a6c3f2e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Ảnh đại diện"
+          style="width: 50%; height: auto; border-radius: 10px"
+        />
+      </section>
+
+      <section>
+        <h2>Thông tin cá nhân</h2>
+        <p>
+          Hisss embes, this is Trang Di, welcome to my bc. In this bc, Im gonna
+          be a fanclub leader.
+        </p>
+      </section>
+
+      <section>
+        <h2>Công việc hiện tại</h2>
+        <ul>
+          <li>Sinh viên IT tại CMCU</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sở thích</h2>
+        <ul>
+          <li>Đu idol mọi lúc mọi nơi</li>
+          <li>Đi vòng vòng khám phá thế giới</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tật xấu</h2>
+        <ul>
+          <li>vô tri</li>
+          <li>gì cũng đòi perfect nhưng không làm</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Quizzes làm quen</h2>
+
+        <div>
+          <p>
+            1. Pick lớn nhất của mị trong ATVNCG là ai? (gợi ý đã có sẵn trong
+            bài)
+          </p>
+          <input type="radio" id="p1" name="bestpick" value="dk" />
+          <label for="p1">Bé Thu</label><br />
+
+          <input type="radio" id="p2" name="bestpick" value="tp" />
+          <label for="p2">Hải Ly</label><br />
+
+          <input type="radio" id="p3" name="bestpick" value="ts" />
+          <label for="p3">Neko Lê</label><br />
+
+          <input type="radio" id="p4" name="bestpick" value="pdt" />
+          <label for="p4">chú Đinh Tùng</label><br />
+        </div>
+
+        <div>
+          <p>Stage yêu thích của mị trong 4 công đầu là gì? (hihi)</p>
+
+          <input type="checkbox" id="nuoc1" name="stage" value="TDOMT" />
+          <label for="nuoc1">Trái đất ôm mặt trời</label><br />
+
+          <input type="checkbox" id="nuoc2" name="stage" value="ThuHoai" />
+          <label for="nuoc2">Thu Hoài</label><br />
+
+          <input type="checkbox" id="nuoc3" name="stage" value="TGSGND" />
+          <label for="nuoc3">Tỉnh giấc sau giấc ngủ đông</label><br />
+
+          <input
+            type="checkbox"
+            id="nuoc4"
+            name="stage"
+            value="ASNM"
+            disabled
+          />
+          <label for="nuoc4">Anh sẽ nhớ mãi</label><br />
+        </div>
+
+        <div>
+          <p>Câu hỏi cá nhân. Mị ghét ăn gì?</p>
+          <select name="hate_food" id="hate_food">
+            <option value="durian">Sầu riêng</option>
+            <option value="onion">Hành</option>
+            <option value="coriander">Rau mùi</option>
+            <option value="cilantro">Ngò</option>
+            <option value="luu">Lựu</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="answer">Bro có lời nhắn nào không?</label><br />
+          <input
+            type="text"
+            id="answer"
+            name="answer"
+            placeholder="Nhan le cho me"
+            style="width: 300px; padding: 5px; margin-top: 10px"
+          />
+        </div>
+
+        <button
+          type="submit"
+          style="
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #92d894;
+            color: white;
+            border: none;
+            border-radius: 5px;
+          "
+        >
+          Gửi cho Di
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Contact:
+        <a
+          href="https://www.facebook.com/gnart.nguyen.39"
+          target="_blank"
+          class="contact-link"
+          >Facebook</a
+        >
+      </p>
+      <p>Gmail: Trangsae.fw@gmail.com</p>
+    </footer>
+  </body>
+</html>
