@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Cá Nhân</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        color: rgb(246, 255, 252);
+        font-family: Arial, sans-serif;
+        position: relative;
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://i.pinimg.com/564x/13/97/c6/1397c6a1ba748794e0dd0fa0766da891.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /**/
+        filter: brightness(20%) opacity(90%) blur(1px);
+        z-index: -1;
+      }
+
+      .content {
+        z-index: 1;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .left-column {
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 35%;
+      }
+
+      .right-column {
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 65%;
+      }
+
+      .left-column img {
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .image-container {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        margin-bottom: 20px; /* Thêm khoảng cách bên dưới ảnh */
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+      a {
+        color: #ffbbbb; /* Màu sắc tùy chọn, ví dụ: đỏ cà chua */
+        text-decoration: none; /* Loại bỏ gạch chân */
+      }
+
+      a:hover {
+        color: #d7d7d7; /* Màu sắc khi di chuột qua, ví dụ: cam */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <div class="image-container">
+          <img
+            src="https://i.pinimg.com/564x/00/8d/f5/008df5e04f890d08e4d19f02c820807a.jpg"
+            alt="Ảnh đại diện"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <h1 style="text-align: center">Nguyễn Thị Quỳnh Trang</h1>
+
+        <h2>Giới thiệu chung</h2>
+        <p>
+          Tôi là sinh viên năm 2 ngành Công nghệ Thông tin tại Đại học CMC. Tôi
+          có kỹ năng tự học, khả năng làm việc nhóm hiệu quả. Tôi luôn duy trì
+          động lực và sẵn sàng chấp nhận thách thức để phát triển bản thân.
+        </p>
+
+        <hr />
+
+        <h2>Liên hệ</h2>
+        <p>Email: Trangsae.fw@gmail.com</p>
+        <p>Số điện thoại: 0852 885 411</p>
+        <p>Địa chỉ hiện tại: Thanh Xuân Nam, Hà Nội</p>
+
+        <hr />
+        <h2>Sở thích</h2>
+        <p>Đọc sách, chơi thể thao, và lập trình các dự án cá nhân.</p>
+      </div>
+
+      <div class="right-column">
+        <h2>Mục tiêu nghề nghiệp</h2>
+        <p>
+          Tìm kiếm cơ hội làm việc tại một môi trường năng động, thử thách, để
+          phát huy tối đa kỹ năng lập trình và đóng góp vào sự phát triển của
+          công ty. Tìm kiếm cơ hội làm việc tại một môi trường năng động, thử
+          thách, để phát huy tối đa kỹ năng lập trình và đóng góp vào sự phát
+          triển của công ty.
+        </p>
+
+        <hr />
+
+        <h2>Kỹ năng</h2>
+        <ol>
+          <li>Ngôn ngữ lập trình: C, C#, Java, Kotlin, SQL</li>
+          <li>Phát triển web: HTML, CSS</li>
+          <li>Quản lý cơ sở dữ liệu: SQL Server, SQLite, MongoDB</li>
+          <li>Kỹ năng làm việc nhóm, quản lý dự án</li>
+        </ol>
+
+        <hr />
+        <h2>Kinh nghiệm làm việc</h2>
+        <dl>
+          <dt>
+            <strong>Các dự án nhóm</strong>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                Leader
+                <a href="https://github.com/diiafyra/death-or-live.git"
+                  >Hệ thống quản lý bán hàng Java
+                </a>
+              </li>
+              <li>
+                Leader
+                <a href="https://github.com/diiafyra/BTLC-.git">
+                  Hệ thống quản lý nhà cung cấp C#</a
+                >
+              </li>
+              <li>
+                Thiết kế cơ sở dữ liệu cho hệ thống quản lý phòng trọ
+                <a href="https://github.com/diiafyra/QLPT.git">
+                  Báo cáo hệ thống</a
+                >
+              </li>
+            </ul>
+          </dd>
+
+          <dt><strong>Các dự án cá nhân</strong></dt>
+          <dd>
+            <ul>
+              <li>
+                Full
+                <a href="https://github.com/diiafyra/support.git"
+                  >Phần mềm đọc thông báo</a
+                >
+              </li>
+              <li>
+                Full
+                <a href="https://github.com/diiafyra/dialy.git"
+                  >App quản lý thời gian</a
+                >
+              </li>
+            </ul>
+          </dd>
+        </dl>
+
+        <hr />
+        <h2>Học vấn</h2>
+        <ol>
+          <li>Sinh viên năm 2 đại học CMC. (2023 - nay)</li>
+          <li>Chứng chỉ MOS PPT, Word 900+</li>
+          <li>Giải thưởng 1</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

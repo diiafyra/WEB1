@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Góc nhỏ của TC</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #bed1e3;
+      }
+      .hero {
+        margin: 10px;
+        border-radius: 10px;
+        background-color: #93aeca;
+        color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .container {
+        margin: 10px auto;
+        border-radius: 10px;
+        max-width: 1200px;
+        padding: 20px;
+        background: #eebfd1;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #556676;
+      }
+      figure {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #ecaac2;
+        color: white;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px;
+        background-color: #92aeca;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #ecaac2;
+      }
+      td {
+        width: 50%;
+        vertical-align: top; /* Căn chỉnh nội dung ở trên cùng ô */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Bạn mua gì TC không có cái đó!</h1>
+      <p><small>Sự hài lòng của bạn là hài cốt của tôi <3</small></p>
+    </div>
+
+    <div class="container">
+      <h2>Bảng Chi Tiết Sản Phẩm</h2>
+      <table>
+        <tr>
+          <td>
+            <figure>
+              <figcaption>Sản phẩm 1</figcaption>
+              <img
+                src="https://i.pinimg.com/564x/0e/e0/b7/0ee0b759ba68afc537c504a923ca49ee.jpg"
+                alt=""
+                style="border-radius: 10px; width: 80%"
+              />
+            </figure>
+            <details>
+              <summary>
+                <p>
+                  <strong>Tên sản phẩm:</strong> Gì cũng được <br />
+                  <strong>Giá:</strong> 1 điểm hỏa lực <br />
+                  <small
+                    >Mô tả: Có trong tay sản phẩm này, <i>khách iu</i> được
+                    quyền tự do với mọi quyết định của bản thân. Thật quyết
+                    đoán!</small
+                  >
+                </p>
+              </summary>
+              <section style="text-align: left">
+                <h3>Tính năng Nổi bật</h3>
+                <small>
+                  <ul>
+                    <li>Tính năng 1: Concept gia trưởng mới lo được cho e</li>
+                    <li>Tính năng 2: Gì cũng được ngoại trừ...</li>
+                    <li>Tính năng 3: Sử dụng mọi lúc mọi nơi</li>
+                  </ul>
+                </small>
+              </section>
+            </details>
+          </td>
+          <td>
+            <figure>
+              <figcaption>Sản phẩm 2</figcaption>
+              <img
+                src="https://i.pinimg.com/564x/2e/d0/05/2ed00512b89a082b948fb158cbdd3ed5.jpg"
+                alt=""
+                style="border-radius: 10px; width: 80%"
+              />
+            </figure>
+            <details>
+              <summary>
+                <p>
+                  <strong>Tên sản phẩm:</strong> Đoán xem <br />
+                  <strong>Giá:</strong> 0001 điểm hỏa lực <br />
+                  <small
+                    >Mô tả: Sản phẩm của sốp mang lại cho <i>khách iu</i> nguồn
+                    xúc cảm vô tận tựa như đi thám hiểm in another life...
+                  </small>
+                </p>
+              </summary>
+              <section style="text-align: left">
+                <h3>Tính năng Nổi bật</h3>
+                <small>
+                  <ul>
+                    <li>Tính năng 1: Nâng tầm đời sống tinh thần</li>
+                    <li>Tính năng 2: Bớt rảnh rỗi vì luôn bận tìm hiểu</li>
+                    <li>
+                      Tính năng 3: Dễ thương và ngang ngược chỉ cách nhau 1 câu
+                      nói
+                    </li>
+                  </ul>
+                </small>
+              </section>
+            </details>
+          </td>
+        </tr>
+      </table>
+
+      <section>
+        <h2>Liên hệ với Chúng tôi</h2>
+        <form action="#" method="post">
+          <label for="name">Tên:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Tin nhắn:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Gửi</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
