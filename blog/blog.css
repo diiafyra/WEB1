@@ -1,0 +1,84 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow: auto;
+}
+
+#youtube-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền mờ cho nội dung */
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* padding: 20px; */
+}
+
+img {
+  border-radius: 50%;
+  border: 5px solid rgb(19, 96, 40);
+}
+
+section {
+  background-color: rgba(115, 164, 116, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  background-color: rgba(0, 0, 0, 0.6); /* Nền mờ cho blockquote */
+  padding: 10px;
+  border-left: 5px solid #ccc;
+  margin: 20px 0;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.6); /* Nền mờ cho form */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: rgb(19, 96, 40);
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(143, 31, 31);
+}
+
+.contact-section {
+  background-color: #9a4747;
+  color: white;
+  border-radius: 0px;
+}
