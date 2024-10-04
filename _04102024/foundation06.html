@@ -4,13 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .para,
+      .small {
+        font-size: 22px;
+        font-weight: 800;
+      }
+      .small {
+        font-size: 14px;
+      }
+
+      .button {
+        background-color: rgb(255, 255, 255);
+        font-size: 20px;
+      }
+      .confirm-button {
+        background: green;
+        color: white;
+        font-weight: bold;
+      }
+
+      .text {
+        font-weight: 100;
+        font-size: 22px;
+      }
+      .child {
+        font-weight: 800;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
-    <p style="font-weight: bold; font-size: 50px">
-      I'm just a paragraph with extra bold text
-    </p>
-    <p style="font-weight: bold">
-      I', a smaller paragraph, also with extra bold text!
-    </p>
+    <p class="para">Im just a paragraph with extra bold text</p>
+    <p class="para small">Im a smaller paragraph, also with extra bold text!</p>
+
+    <button class="button confirm-button">Confirm</button>
+    <button class="button">Cancel</button>
+
+    <div class="text">Im a div with thin text!</div>
+    <div class="text">
+      Im a div with thin text and a child div!
+      <div class="text child">Im a smaller child div with extra bold text.</div>
+    </div>
   </body>
 </html>
